@@ -18,7 +18,6 @@ import Script from "next/script"
 export default function ContactPage() {
   const { toast } = useToast()
   const [isSubmitting, setIsSubmitting] = useState(false)
-  \
   const [formStatus, setFormStatus: any] = useState<"idle" | "success" | "error">("idle")
   const [selectedService, setSelectedService] = useState("")
   const formRef = useRef<HTMLFormElement>(null)
