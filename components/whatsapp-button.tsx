@@ -1,16 +1,18 @@
-"use client"
+"use client";
 
-import { MessageCircle } from "lucide-react"
-import { motion } from "framer-motion"
+import { MessageCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function WhatsAppButton() {
   const handleWhatsAppClick = () => {
     // Replace with your actual WhatsApp number
-    const phoneNumber = "1234567890"
-    const message = "Hi I need help with my thesis writing"
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
-    window.open(whatsappUrl, "_blank")
-  }
+    const phoneNumber = "+918077122052";
+    const message = "Hi I need help with my thesis writing";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
+  };
 
   return (
     <div className="fixed bottom-4 right-4 z-[100] pointer-events-none">
@@ -42,5 +44,5 @@ export default function WhatsAppButton() {
         ></div>
       </motion.div>
     </div>
-  )
+  );
 }

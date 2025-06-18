@@ -1,6 +1,13 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Mail,
+  Phone,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -13,17 +20,20 @@ export default function Footer() {
               <div className="relative h-12 w-12 bg-white rounded-full p-1">
                 <Image
                   src="/images/logo.png"
-                  alt="Akshat Thesis and Research Services Logo"
+                  alt="Chaudhary Thesis and Research Services Logo"
                   fill
                   className="object-contain"
                 />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Akshat</h3>
+                <h3 className="text-xl font-bold">Chaudhary</h3>
                 <p className="text-sm">Thesis & Research Services</p>
               </div>
             </div>
-            <p className="mb-4">Professional academic writing services for students, researchers, and professionals.</p>
+            <p className="mb-4">
+              Professional academic writing services for students, researchers,
+              and professionals.
+            </p>
             <div className="flex space-x-4">
               <Link href="#" className="hover:text-accent transition-colors">
                 <Facebook size={20} />
@@ -54,17 +64,26 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-accent transition-colors">
+                <Link
+                  href="/about"
+                  className="hover:text-accent transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-accent transition-colors"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-accent transition-colors">
+                <Link
+                  href="/contact"
+                  className="hover:text-accent transition-colors"
+                >
                   Contact Us
                 </Link>
               </li>
@@ -76,27 +95,42 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Our Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-accent transition-colors"
+                >
                   Thesis Writing
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-accent transition-colors"
+                >
                   Dissertation Help
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-accent transition-colors"
+                >
                   Research Paper Writing
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-accent transition-colors"
+                >
                   Publication Assistance
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-accent transition-colors"
+                >
                   Editing & Proofreading
                 </Link>
               </li>
@@ -109,19 +143,19 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <Mail size={16} />
-                <span>info@akshatthesis.com</span>
+                <span>ketanchaudhary.ninja</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 1000000000</span>
               </li>
               <li>
                 <address className="not-italic">
                   123 Academic Avenue
                   <br />
-                  New York, NY 10001
+                  Bulandshahr
                   <br />
-                  United States
+                  Uttar Pradesh
                 </address>
               </li>
             </ul>
@@ -130,15 +164,27 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; {new Date().getFullYear()} Akshat Thesis & Research Services. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} Chaudhary Thesis & Research
+              Services. All rights reserved.
+            </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="#" className="text-sm hover:text-accent transition-colors">
+              <Link
+                href="#"
+                className="text-sm hover:text-accent transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-sm hover:text-accent transition-colors">
+              <Link
+                href="#"
+                className="text-sm hover:text-accent transition-colors"
+              >
                 Terms of Service
               </Link>
-              <Link href="#" className="text-sm hover:text-accent transition-colors">
+              <Link
+                href="#"
+                className="text-sm hover:text-accent transition-colors"
+              >
                 Cookie Policy
               </Link>
             </div>
@@ -146,5 +192,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

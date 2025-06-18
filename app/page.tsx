@@ -1,30 +1,22 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import Image from "next/image"
-import ServiceCard from "@/components/service-card"
-import CounterSection from "@/components/counter-section"
-import TestimonialSection from "@/components/testimonial-section"
-import FaqSection from "@/components/faq-section"
-import { ArrowRight } from "lucide-react"
-import AnimatedSection from "@/components/animated-section"
-import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
+import ServiceCard from "@/components/service-card";
+import CounterSection from "@/components/counter-section";
+import TestimonialSection from "@/components/testimonial-section";
+import FaqSection from "@/components/faq-section";
+import { ArrowRight } from "lucide-react";
+import AnimatedSection from "@/components/animated-section";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero Section */}
       <section className="relative bg-primary text-white py-20 md:py-32">
-        <div className="absolute inset-0 overflow-hidden">
-          <Image
-            src="/placeholder.svg?height=1080&width=1920"
-            alt="Academic background"
-            fill
-            className="object-cover opacity-10"
-            priority
-          />
-        </div>
+        <div className="absolute inset-0 overflow-hidden"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
             <motion.div
@@ -35,7 +27,7 @@ export default function Home() {
             >
               <Image
                 src="/images/logo.png"
-                alt="Akshat Thesis and Research Services Logo"
+                alt="Chaudhary Thesis and Research Services Logo"
                 fill
                 className="object-contain"
               />
@@ -55,8 +47,8 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                Empowering students, researchers, and professionals with expert thesis writing, dissertation help, and
-                publication assistance.
+                Empowering students, researchers, and professionals with expert
+                thesis writing, dissertation help, and publication assistance.
               </motion.p>
             </div>
           </div>
@@ -66,7 +58,11 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            <Button asChild size="lg" className="bg-accent text-primary hover:bg-accent/90 button-ripple">
+            <Button
+              asChild
+              size="lg"
+              className="bg-accent text-primary hover:bg-accent/90 button-ripple"
+            >
               <Link href="/services">Explore Our Services</Link>
             </Button>
             <Button
@@ -86,9 +82,12 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Academic Services</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Our Academic Services
+              </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive academic writing solutions tailored to your specific needs
+                Comprehensive academic writing solutions tailored to your
+                specific needs
               </p>
             </div>
           </AnimatedSection>
@@ -140,7 +139,10 @@ export default function Home() {
 
           <AnimatedSection animation="fade-up" delay={0.7}>
             <div className="text-center mt-12">
-              <Button asChild className="bg-secondary hover:bg-secondary/90 button-ripple">
+              <Button
+                asChild
+                className="bg-secondary hover:bg-secondary/90 button-ripple"
+              >
                 <Link href="/services" className="flex items-center gap-2">
                   View All Services <ArrowRight size={16} />
                 </Link>
@@ -159,10 +161,13 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection animation="fade-right">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Our Academic Writing Services?</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                  Why Choose Our Academic Writing Services?
+                </h2>
                 <p className="text-lg mb-8 text-muted-foreground">
-                  We combine academic expertise with professional writing skills to deliver exceptional results that
-                  help you achieve your academic and professional goals.
+                  We combine academic expertise with professional writing skills
+                  to deliver exceptional results that help you achieve your
+                  academic and professional goals.
                 </p>
 
                 <div className="space-y-6">
@@ -186,8 +191,13 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold mb-2">Expert Academic Writers</h3>
-                        <p>Our team consists of PhD-qualified experts across various disciplines.</p>
+                        <h3 className="text-xl font-semibold mb-2">
+                          Expert Academic Writers
+                        </h3>
+                        <p>
+                          Our team consists of PhD-qualified experts across
+                          various disciplines.
+                        </p>
                       </div>
                     </div>
                   </AnimatedSection>
@@ -212,8 +222,13 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold mb-2">Plagiarism-Free Content</h3>
-                        <p>All our work is original and passes through rigorous plagiarism checks.</p>
+                        <h3 className="text-xl font-semibold mb-2">
+                          Plagiarism-Free Content
+                        </h3>
+                        <p>
+                          All our work is original and passes through rigorous
+                          plagiarism checks.
+                        </p>
                       </div>
                     </div>
                   </AnimatedSection>
@@ -238,15 +253,23 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold mb-2">Timely Delivery</h3>
-                        <p>We respect deadlines and ensure your work is delivered on time, every time.</p>
+                        <h3 className="text-xl font-semibold mb-2">
+                          Timely Delivery
+                        </h3>
+                        <p>
+                          We respect deadlines and ensure your work is delivered
+                          on time, every time.
+                        </p>
                       </div>
                     </div>
                   </AnimatedSection>
                 </div>
 
                 <AnimatedSection animation="fade-up" delay={0.4}>
-                  <Button asChild className="mt-8 bg-primary hover:bg-primary/90 button-ripple">
+                  <Button
+                    asChild
+                    className="mt-8 bg-primary hover:bg-primary/90 button-ripple"
+                  >
                     <Link href="/about">Learn More About Us</Link>
                   </Button>
                 </AnimatedSection>
@@ -260,7 +283,7 @@ export default function Home() {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  src="/placeholder.svg?height=1000&width=800"
+                  src="/images/section2.jpeg"
                   alt="Academic professionals"
                   fill
                   className="object-cover"
@@ -281,12 +304,19 @@ export default function Home() {
       <section className="bg-primary text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <AnimatedSection animation="fade-up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Excel in Your Academic Journey?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Excel in Your Academic Journey?
+            </h2>
             <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-              Contact us today for a free consultation and take the first step towards academic excellence.
+              Contact us today for a free consultation and take the first step
+              towards academic excellence.
             </p>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button asChild size="lg" className="bg-accent text-primary hover:bg-accent/90 button-ripple">
+              <Button
+                asChild
+                size="lg"
+                className="bg-accent text-primary hover:bg-accent/90 button-ripple"
+              >
                 <Link href="/contact">Get Started Now</Link>
               </Button>
             </motion.div>
@@ -294,5 +324,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }
