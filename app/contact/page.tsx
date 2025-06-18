@@ -358,14 +358,14 @@ export default function ContactPage() {
                         title: "Our Location",
                         content: [
                           "123 Academic Avenue",
-                          "New York, NY 10001",
-                          "United States",
+                          "Bulandshahr",
+                          "Uttar Pradesh",
                         ],
                       },
                       {
                         icon: <Phone className="h-5 w-5 text-primary" />,
                         title: "Phone",
-                        content: ["+1 (555) 123-4567", "Mon-Fri, 9am-6pm EST"],
+                        content: ["+91 1000000000", "Mon-Fri, 9am-6pm EST"],
                       },
                       {
                         icon: <Mail className="h-5 w-5 text-primary" />,
@@ -464,9 +464,12 @@ export default function ContactPage() {
               >
                 {/* In a real implementation, you would embed a Google Map or similar here */}
                 <div className="absolute inset-0 bg-muted flex items-center justify-center">
-                  <p className="text-muted-foreground">
-                    Interactive Map Would Be Embedded Here
-                  </p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28075.540649868053!2d77.83515131588298!3d28.405899450476866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ca6b2622913b1%3A0x911a6113e90ec604!2sBulandshahr%2C%20Uttar%20Pradesh%20203001!5e0!3m2!1sen!2sin!4v1750269513685!5m2!1sen!2sin"
+                    className="w-full h-full border-0"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </motion.div>
             </AnimatedSection>

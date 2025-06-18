@@ -1,12 +1,19 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { BookOpen, Award, Users, Clock, CheckCircle, Globe } from "lucide-react"
-import AnimatedSection from "@/components/animated-section"
-import PageTransition from "@/components/page-transition"
-import { motion } from "framer-motion"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  BookOpen,
+  Award,
+  Users,
+  Clock,
+  CheckCircle,
+  Globe,
+} from "lucide-react";
+import AnimatedSection from "@/components/animated-section";
+import PageTransition from "@/components/page-transition";
+import { motion } from "framer-motion";
 
 export default function AboutPage() {
   return (
@@ -17,10 +24,13 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-up">
               <div className="max-w-3xl">
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                  About Us
+                </h1>
                 <p className="text-lg md:text-xl">
-                  We are a team of academic professionals dedicated to helping students, researchers, and professionals
-                  achieve excellence in their academic and professional writing.
+                  We are a team of academic professionals dedicated to helping
+                  students, researchers, and professionals achieve excellence in
+                  their academic and professional writing.
                 </p>
               </div>
             </AnimatedSection>
@@ -37,26 +47,38 @@ export default function AboutPage() {
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Image src="/placeholder.svg?height=800&width=1200" alt="Our story" fill className="object-cover" />
+                  <Image
+                    src="/images/section.jpeg"
+                    alt="Our story"
+                    fill
+                    className="object-cover"
+                  />
                 </motion.div>
               </AnimatedSection>
 
               <AnimatedSection animation="fade-left">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    Our Story
+                  </h2>
                   <p className="text-lg mb-6">
-                    Founded in 2010, our academic writing service was born out of a passion for helping students and
-                    researchers overcome the challenges of academic writing. What started as a small team of PhD
-                    graduates has grown into a global network of academic experts.
+                    Founded in 2010, our academic writing service was born out
+                    of a passion for helping students and researchers overcome
+                    the challenges of academic writing. What started as a small
+                    team of PhD graduates has grown into a global network of
+                    academic experts.
                   </p>
                   <p className="text-lg mb-6">
-                    Our mission is to empower students and researchers with the tools and support they need to excel in
-                    their academic pursuits. We believe that everyone deserves access to high-quality academic writing
-                    assistance, regardless of their background or experience.
+                    Our mission is to empower students and researchers with the
+                    tools and support they need to excel in their academic
+                    pursuits. We believe that everyone deserves access to
+                    high-quality academic writing assistance, regardless of
+                    their background or experience.
                   </p>
                   <p className="text-lg">
-                    Today, we are proud to have helped thousands of clients from over 35 countries achieve their
-                    academic goals and advance their careers through our comprehensive writing services.
+                    Today, we are proud to have helped thousands of clients from
+                    over 35 countries achieve their academic goals and advance
+                    their careers through our comprehensive writing services.
                   </p>
                 </div>
               </AnimatedSection>
@@ -69,9 +91,12 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <AnimatedSection>
               <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Core Values</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Our Core Values
+                </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  The principles that guide our work and commitment to academic excellence
+                  The principles that guide our work and commitment to academic
+                  excellence
                 </p>
               </div>
             </AnimatedSection>
@@ -115,7 +140,11 @@ export default function AboutPage() {
                     "Our diverse team brings a global perspective to academic writing, enriching the quality and relevance of our work.",
                 },
               ].map((value, index) => (
-                <AnimatedSection key={index} animation="fade-up" delay={0.1 * index}>
+                <AnimatedSection
+                  key={index}
+                  animation="fade-up"
+                  delay={0.1 * index}
+                >
                   <motion.div
                     className="bg-background p-8 rounded-lg shadow-sm service-card h-full"
                     whileHover={{ y: -5 }}
@@ -137,12 +166,22 @@ export default function AboutPage() {
         <section className="bg-primary text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <AnimatedSection>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Work With Our Expert Team?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Ready to Work With Our Expert Team?
+              </h2>
               <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-                Contact us today to discuss your academic writing needs and how we can help you achieve excellence.
+                Contact us today to discuss your academic writing needs and how
+                we can help you achieve excellence.
               </p>
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button asChild size="lg" className="bg-accent text-primary hover:bg-accent/90 button-ripple">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-accent text-primary hover:bg-accent/90 button-ripple"
+                >
                   <Link href="/contact">Contact Us Now</Link>
                 </Button>
               </motion.div>
@@ -151,5 +190,5 @@ export default function AboutPage() {
         </section>
       </div>
     </PageTransition>
-  )
+  );
 }

@@ -59,7 +59,7 @@ export default function Header() {
               <div className="relative h-10 w-10 overflow-hidden rounded-full">
                 <Image
                   src="/images/logo.png"
-                  alt="Akshat Thesis and Research Services Logo"
+                  alt="Chaudhary Thesis and Research Services Logo"
                   width={40}
                   height={40}
                   className="object-contain"
@@ -72,7 +72,7 @@ export default function Header() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  Akshat
+                  Chaudhary
                 </motion.span>
                 <motion.span
                   className="text-sm font-medium text-muted-foreground leading-tight"
