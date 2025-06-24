@@ -1,4 +1,4 @@
-# Chaudhary Thesis and Research Center
+# Thesis and Research Center
 
 A modern, responsive website for students seeking help with thesis writing, academic research, and content development. Built using **Next.js** with integrated email notifications powered by **Web3Forms**.
 
